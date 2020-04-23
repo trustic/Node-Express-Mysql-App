@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Poster App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./stylesheets/home_style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="navbar navbar-default">
+    <div id="nav-container" class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">POSTER APP DEV</a>
+      </div>
+      <ul id="loggedIn" class="nav navbar-nav">
+        <li id="email"></li>
+        <li><button id="signout-button" onclick="signoutClick()">SIGNOUT</button></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="main-heading">
+      Welcome to the new Social Network Website
+    </div>
+    <div class="main-sub-heading">
+      This website was created by - Debottam Banerjee.<br> To continue using all its features please login or if already logged in please visit your profile.
+    </div>
+    <div class="button-div">
+      <div class="login-button-div">
+        <button class="login-button" onclick="checkLoggedIn()">LOGIN</button>
+      </div>
+      <div class="profile-button-div">
+        <button class="profile-button" onclick="checkLoggedIn()">PROFILE</button>
+      </div>
+    </div>
+  </div>
+  <script src="./javascripts/home.js"></script>
+</body>
+
+</html>

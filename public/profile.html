@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./stylesheets/profile_style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-default">
+        <div id="nav-container" class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">POSTER APP DEV</a>
+            </div>
+            <ul id="loggedIn" class="nav navbar-nav">
+                <li id="email"></li>
+                <li><button id="signout-button" onclick="signoutClick()">SIGNOUT</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="create-post">
+        <div class="text-area"><textarea type="text" placeholder="Write something to create a new post....." id="post-content"></textarea></div>
+        <div class="submit-button"><button onclick="createPostClick()" class="create-button">Create Post</button>
+    </div>
+    </div>
+    <div id="posts"></div>
+</body>
+<script src="./javascripts/profile.js"></script>
+
+</html>
